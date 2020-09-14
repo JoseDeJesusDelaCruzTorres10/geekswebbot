@@ -26,12 +26,12 @@ $update = json_decode(file_get_contents('php://input'));
 //your app
 try {
 
-    if($update->message->text == '/email')
+    if($update->message->text == '/correo electronico')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
         	'chat_id' => $update->message->chat->id,
-        	'text' => "You can send email to : Kasra@madadipouya.com"
+        	'text' => "Envie un correo a : kfcjjct180701@gmail.com"
      	]);
     }
     else if($update->message->text == '/help')
