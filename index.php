@@ -19,8 +19,8 @@
 */
 require 'vendor/autoload.php';
 
-$client = new Zelenin\Telegram\Bot\Api(''); // Set your access token
-$url = ''; // URL RSS feed
+$client = new Zelenin\Telegram\Bot\Api('1177819117:AAFmKK3mSMEYZvwwgSeRLCF2L63ARomXajg'); // Set your access token
+$url = 'https://serverfriensmash.herokuapp.com/'; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));
 
 //your app
