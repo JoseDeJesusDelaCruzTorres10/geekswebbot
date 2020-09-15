@@ -26,7 +26,7 @@ $update = json_decode(file_get_contents('php://input'));
 //your app
 try {
 
-    if($update->message->text == '/correo electronico')
+    if($update->message->text == '/contacto')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
@@ -39,8 +39,8 @@ try {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => "List of commands :\n /email -> Get email address of the owner \n /latest -> Get latest posts of the blog 
-    		/help -> Shows list of available commands"
+    		'text' => "List of commands :\n /contacto -> Vea el email del bot \n /latest -> Get latest posts of the blog 
+    		/help -> Vea los comandos disponibles"
     		]);
 
     }
