@@ -44,7 +44,7 @@ try {
     		]);
 
     }
-    else if($update->message->text == '/latest')
+    else if($update->message->text == '/yuri')
     {
     		Feed::$cacheDir 	= __DIR__ . '/cache';
 			Feed::$cacheExpire 	= '5 hours';
